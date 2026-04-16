@@ -3,6 +3,13 @@
 */
 
 export function sum_digits(num) {
-  return 0;
-}
+  let sum = 0;
 
+  while (num > 0) {
+    const digit = num % 10;
+    sum += digit;
+    num = Math.floor(num / 10);
+  }
+
+  return sum;
+}
