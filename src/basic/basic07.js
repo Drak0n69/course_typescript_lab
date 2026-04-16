@@ -3,5 +3,9 @@
 */
 
 export function factorial(n){
-  return n;
+  while (n > 1) {
+    return n * factorial(n - 1);
+  } 
+
+  return 1;
 }
