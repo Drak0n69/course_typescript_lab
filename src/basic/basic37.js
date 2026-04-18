@@ -3,8 +3,11 @@
 */
 
 export function map(arr, f) {
+  let result = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+    result.push(f(arr[i]));
+  }
 
-  return arr;
+  return result;
 }
-
-
