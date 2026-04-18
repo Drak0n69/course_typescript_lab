@@ -3,6 +3,12 @@
 */
 
 export function average(arr) {
-	return 0
-}
+	let lenth = arr.length;
+	let sum = 0;
 
+	for (let i = 0; i < lenth; i++) {
+		sum += arr[i];
+	}
+
+	return sum / lenth;
+}
