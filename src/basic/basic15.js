@@ -3,5 +3,17 @@
 */
 
 export function swap_first_last(arr) {
-    return arr;
+    let newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i]);
+    }
+
+    if (newArr.length > 1) {
+        let first = newArr[0];
+        newArr[0] = newArr[newArr.length - 1];
+        newArr[newArr.length - 1] = first;
+    }
+
+    return newArr;
 }
