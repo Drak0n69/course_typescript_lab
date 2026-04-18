@@ -3,5 +3,8 @@
 */
 
 export function insertAtPosition(arr, pos, elem) {
-  return arr;
+  const before = arr.slice(0, pos);
+  const after = arr.slice(pos);
+
+  return before.concat(elem, after);
 }
