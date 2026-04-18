@@ -3,6 +3,11 @@
 */
 
 export function extractUniqueValues(arr1, arr2) {
-    return arr1;
-}
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr2.indexOf(arr1[i]) === -1) {
+            arr2.push(arr1[i]);
+        }
+    }
 
+    return arr2;
+}
