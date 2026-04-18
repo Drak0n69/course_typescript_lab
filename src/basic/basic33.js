@@ -3,5 +3,13 @@
 */
 
 export function zeroRowColumn(matrix, row, col) {
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i][col] = 0;
+    }
+    
+    for (let j = 0; j < matrix[0].length; j++) {
+        matrix[row][j] = 0;
+    }
+
     return matrix;
 }
