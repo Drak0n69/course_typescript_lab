@@ -4,5 +4,14 @@
 */
 
 export function capitalize_words(sentence) {
-	return "";
+	let words = sentence.split(' ');
+
+	for (let i = 0; i < words.length; i++) {
+		let word = words[i];
+		if (word.length > 0) {
+			words[i] = word[0].toUpperCase() + word.slice(1);
+		}
+	}
+	
+	return words.join(' ');
 }
