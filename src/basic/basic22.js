@@ -4,5 +4,8 @@
 */
 
 export function palindrome_check(word) {
-	return true;
+	const normalizedWord = word.toLowerCase();
+	const reversedWord = normalizedWord.split('').reverse().join('');
+
+	return normalizedWord === reversedWord;
 }
