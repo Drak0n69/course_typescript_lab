@@ -3,7 +3,13 @@
 */
 
 export function sum_positive(arr) {
-	return 0;
+	let sum = 0;
+	
+	for (const item of arr) {
+		if (item > 0) {
+			sum += item;
+		}
+	}
+
+	return sum;
 }
-
-
